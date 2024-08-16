@@ -13,4 +13,4 @@ jobs:
               run: ls -lhtr
             
             - name: Read file
-              run: cat README.md
+              run: toutch README.md
