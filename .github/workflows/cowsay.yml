@@ -1,0 +1,16 @@
+name: Dragon work flow
+
+on: push
+
+jobs: 
+    Dragen_job:
+        runs-on: ubuntu-latest
+        steps: 
+          - name: Install cowsay software
+            run: sudo apt-get install cowsay -y
+        
+          - name: Over write with gragon
+            run: cowsay -f dragon "I am a Dragon" >> dragon.txt
+
+          - name: Print dragon 
+            run: cat dragon.txt
